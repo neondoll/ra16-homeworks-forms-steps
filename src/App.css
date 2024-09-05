@@ -1,0 +1,68 @@
+#root { max-width: 1280px; margin: 0 auto; padding: 2rem; text-align: center; }
+
+.training-records__form,
+.training-records__table { width: 100%; }
+
+.training-records__table { margin-top: 16px; }
+
+.training-records-form { display: flex; align-items: flex-end; column-gap: 16px; }
+
+.training-records-form__label,
+.training-records-form__input { display: block; }
+
+.training-records-form__label { font-weight: 500; }
+
+.training-records-form__input,
+.training-records-form__btn {
+    padding: 0.6em 1.2em;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: border-color 0.25s;
+}
+
+.training-records-form__input:hover,
+.training-records-form__btn:hover { border-color: #646cff; }
+
+.training-records-form__input:focus,
+.training-records-form__input:focus-visible,
+.training-records-form__btn:focus,
+.training-records-form__btn:focus-visible { outline: 4px auto -webkit-focus-ring-color; }
+
+.training-records-form__input { margin-top: 8px; }
+
+.training-records-form__btn { font-weight: 500; cursor: pointer; }
+
+.training-records-table__header,
+.training-records-table__data { padding: 0.6em 1.2em; }
+
+.training-records-table__header { font-weight: 500; }
+
+.training-records-table__body > * > * { background-color: #1a1a1a; }
+
+.training-records-table__body > *:first-child > *:first-child { border-top-left-radius: 8px; }
+
+.training-records-table__body > *:first-child > *:last-child { border-top-right-radius: 8px; }
+
+.training-records-table__body > *:last-child > *:first-child { border-bottom-left-radius: 8px; }
+
+.training-records-table__body > *:last-child > *:last-child { border-bottom-right-radius: 8px; }
+
+.training-records-table__btn {
+    padding: 1px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: border-color 0.25s;
+}
+
+.training-records-table__btn:hover { border-color: #646cff; }
+
+.training-records-table__btn:focus,
+.training-records-table__btn:focus-visible { outline: 4px auto -webkit-focus-ring-color; }
+
+@media (prefers-color-scheme: light) {
+    .training-records-form__input,
+    .training-records-form__btn { background-color: #f9f9f9; }
+
+    .training-records-table__body > * > * { background-color: #f9f9f9; }
+}
